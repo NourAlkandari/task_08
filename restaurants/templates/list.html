@@ -15,7 +15,14 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item text-center">
                 <a href="{% url 'restaurant-detail' restaurant.id %}" class="btn btn-outline-dark">View</a>
-            </li>
+            </li> <li>
+            {% if restaurant.logo %}
+            
+            <img src="{{restaurant.logo.url}}" alt="Card image cap">
+            {% endif %}
+
+        </li> 
+
           </ul>
         </div>
     </div>
